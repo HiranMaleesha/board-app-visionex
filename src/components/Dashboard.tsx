@@ -17,11 +17,10 @@ import { useTaskStore, Task } from '@/store/taskStore';
 import TaskCard from './TaskCard';
 
 const swimlanes = [
-  { id: 'backlog', title: 'Backlog' },
-  { id: 'todo', title: 'To Do' },
+  { id: 'todo', title: 'Todo' },
   { id: 'inprogress', title: 'In Progress' },
-  { id: 'review', title: 'Review' },
-  { id: 'done', title: 'Done' },
+  { id: 'approved', title: 'Approved' },
+  { id: 'reject', title: 'Reject' },
 ];
 
 export default function Dashboard() {

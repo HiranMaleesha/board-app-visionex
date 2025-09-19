@@ -43,7 +43,7 @@ export const useTaskStore = create<TaskStore>()(
       },
     }),
     {
-      name: 'task-store',
+      name: 'task-store-v2',
       partialize: (state) => ({ tasks: state.tasks }),
     }
   )

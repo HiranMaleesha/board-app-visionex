@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Design user interface",
     "description": "Create wireframes and mockups for the new dashboard",
-    "status": "backlog",
+    "status": "todo",
     "priority": "high",
     "assignee": "John Doe"
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "title": "Write unit tests",
     "description": "Create comprehensive unit tests for core functions",
-    "status": "review",
+    "status": "approved",
     "priority": "low",
     "assignee": "Alice Brown"
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "title": "Deploy to production",
     "description": "Set up CI/CD pipeline and deploy the application",
-    "status": "done",
+    "status": "reject",
     "priority": "high",
     "assignee": "Charlie Wilson"
   },
@@ -43,7 +43,7 @@
     "id": "6",
     "title": "Optimize performance",
     "description": "Improve loading times and reduce bundle size",
-    "status": "backlog",
+    "status": "todo",
     "priority": "medium",
     "assignee": "Diana Lee"
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "title": "Add dark mode",
     "description": "Implement dark theme toggle",
-    "status": "todo",
+    "status": "inprogress",
     "priority": "low",
     "assignee": "Eve Garcia"
   },
@@ -59,8 +59,40 @@
     "id": "8",
     "title": "Fix mobile responsiveness",
     "description": "Ensure the app works well on mobile devices",
-    "status": "inprogress",
+    "status": "approved",
     "priority": "medium",
     "assignee": "Frank Miller"
+  },
+  {
+    "id": "9",
+    "title": "Update documentation",
+    "description": "Revise and update project documentation",
+    "status": "todo",
+    "priority": "low",
+    "assignee": "George Hill"
+  },
+  {
+    "id": "10",
+    "title": "Conduct code review",
+    "description": "Review code changes and provide feedback",
+    "status": "inprogress",
+    "priority": "medium",
+    "assignee": "Helen Young"
+  },
+  {
+    "id": "11",
+    "title": "Prepare release notes",
+    "description": "Compile and write release notes for the new version",
+    "status": "approved",
+    "priority": "low",
+    "assignee": "Ian King"
+  },
+  {
+    "id": "12",
+    "title": "Fix security vulnerability",
+    "description": "Address the reported security issue in the codebase",
+    "status": "reject",
+    "priority": "high",
+    "assignee": "Jack Lee"
   }
 ]
