@@ -1,6 +1,7 @@
 'use client';
 import Navbar from '@/components/Navbar';
 import SideBar from '@/components/SideBar';
+import Dashboard from '@/components/Dashboard';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <div className='hidden lg:block'>
           <SideBar />
         </div>
+        <Dashboard />
       </div>
     </div>
   );

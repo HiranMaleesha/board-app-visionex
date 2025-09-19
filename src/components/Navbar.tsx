@@ -1,6 +1,19 @@
+'use client';
+
+import { useState } from 'react';
 import { Plus, Search, Bell } from 'lucide-react';
+import { useTaskStore } from '@/store/taskStore';
 
 export default function Navbar() {
+  const { setSearchQuery } = useTaskStore();
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchValue(value);
+    setSearchQuery(value);
+  };
+
   return (
     <header className='bg-white border-b border-gray-200 px-6 py-4'>
       <div className='flex items-center justify-between'>
@@ -22,6 +35,8 @@ export default function Navbar() {
             <input
               type='text'
               placeholder='Search tasks...'
+              value={searchValue}
+              onChange={handleSearchChange}
               className='pl-10 pr-4 py-2 w-64 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent'
             />
           </div>

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "title": "Design user interface",
+    "description": "Create wireframes and mockups for the new dashboard",
+    "status": "backlog",
+    "priority": "high",
+    "assignee": "John Doe"
+  },
+  {
+    "id": "2",
+    "title": "Implement authentication",
+    "description": "Add login and signup functionality",
+    "status": "todo",
+    "priority": "medium",
+    "assignee": "Jane Smith"
+  },
+  {
+    "id": "3",
+    "title": "Set up database",
+    "description": "Configure and initialize the database schema",
+    "status": "inprogress",
+    "priority": "high",
+    "assignee": "Bob Johnson"
+  },
+  {
+    "id": "4",
+    "title": "Write unit tests",
+    "description": "Create comprehensive unit tests for core functions",
+    "status": "review",
+    "priority": "low",
+    "assignee": "Alice Brown"
+  },
+  {
+    "id": "5",
+    "title": "Deploy to production",
+    "description": "Set up CI/CD pipeline and deploy the application",
+    "status": "done",
+    "priority": "high",
+    "assignee": "Charlie Wilson"
+  },
+  {
+    "id": "6",
+    "title": "Optimize performance",
+    "description": "Improve loading times and reduce bundle size",
+    "status": "backlog",
+    "priority": "medium",
+    "assignee": "Diana Lee"
+  },
+  {
+    "id": "7",
+    "title": "Add dark mode",
+    "description": "Implement dark theme toggle",
+    "status": "todo",
+    "priority": "low",
+    "assignee": "Eve Garcia"
+  },
+  {
+    "id": "8",
+    "title": "Fix mobile responsiveness",
+    "description": "Ensure the app works well on mobile devices",
+    "status": "inprogress",
+    "priority": "medium",
+    "assignee": "Frank Miller"
+  }
+]
