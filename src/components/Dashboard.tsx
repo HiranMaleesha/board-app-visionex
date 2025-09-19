@@ -8,6 +8,7 @@ import {
   DragOverlay,
   DragStartEvent,
   PointerSensor,
+  TouchSensor,
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
@@ -15,7 +16,6 @@ import { arrayMove } from '@dnd-kit/sortable';
 import Swimlane from './Swimlane';
 import { useTaskStore, Task } from '@/store/taskStore';
 import TaskCard from './TaskCard';
-import BoardHeader from './BoardHeader';
 
 const swimlanes = [
   { id: 'todo', title: 'Todo' },
@@ -104,9 +104,8 @@ export default function Dashboard() {
       onDragOver={handleDragOver}
       onDragEnd={handleDragEnd}
     >
-      <div className="flex-1 p-4 sm:p-6 overflow-x-auto">
-        <BoardHeader/>
-        <div className="flex space-x-4 sm:space-x-6 min-w-max">
+      <div className="flex-1 p-2 sm:p-4 lg:p-6">
+        <div className="flex space-x-2 sm:space-x-4 lg:space-x-6 min-w-max">
           {swimlanes.map((lane) => (
             <Swimlane
               key={lane.id}

@@ -15,7 +15,7 @@ export default function Swimlane({ id, title, tasks }: SwimlaneProps) {
   });
 
   return (
-    <div className="flex-shrink-0 w-72 sm:w-80 bg-gray-50 rounded-lg p-4">
+    <div className="flex-shrink-0 w-64 sm:w-72 lg:w-80 bg-gray-50 rounded-lg p-3 sm:p-4">
       <div className="flex items-center justify-between mb-4">
         <h2 className="font-semibold text-gray-900">{title}</h2>
         <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-sm">
