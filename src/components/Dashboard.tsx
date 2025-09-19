@@ -15,6 +15,7 @@ import { arrayMove } from '@dnd-kit/sortable';
 import Swimlane from './Swimlane';
 import { useTaskStore, Task } from '@/store/taskStore';
 import TaskCard from './TaskCard';
+import BoardHeader from './BoardHeader';
 
 const swimlanes = [
   { id: 'todo', title: 'Todo' },
@@ -79,11 +80,9 @@ export default function Dashboard() {
 
     if (!isActiveTask) return;
 
-    // Dropping on a swimlane
     if (swimlanes.some((lane) => lane.id === overId)) {
       updateTaskStatus(activeId as string, overId as string);
     }
-    // Dropping on another task
     else if (isOverTask) {
       const activeIndex = tasks.findIndex((task) => task.id === activeId);
       const overIndex = tasks.findIndex((task) => task.id === overId);
@@ -106,6 +105,7 @@ export default function Dashboard() {
       onDragEnd={handleDragEnd}
     >
       <div className="flex-1 p-4 sm:p-6 overflow-x-auto">
+        <BoardHeader/>
         <div className="flex space-x-4 sm:space-x-6 min-w-max">
           {swimlanes.map((lane) => (
             <Swimlane
