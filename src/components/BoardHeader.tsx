@@ -6,7 +6,7 @@ export default function BoardHeader() {
           <div className="flex-1">
             <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
               <h1 className="text-xl sm:text-2xl font-semibold text-gray-900">Sport Xi Project</h1>
-              <span className="inline-flex items-center bg-yellow-400 text-white text-xs font-medium px-2 py-0.5 rounded-full self-start sm:self-auto">
+              <span className="inline-flex items-center text-white text-xs font-medium px-2 py-0.5 rounded-full self-start sm:self-auto" style={{ backgroundColor: '#f97316' }}>
                 in progress
               </span>
             </div>

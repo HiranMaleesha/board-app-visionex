@@ -22,11 +22,6 @@ export default function TaskCard({ task }: TaskCardProps) {
     transition,
   };
 
-  const priorityColors = {
-    high: { backgroundColor: '#ef4444', color: 'white' },
-    medium: { backgroundColor: '#eab308', color: 'black' },
-    low: { backgroundColor: '#22c55e', color: 'white' },
-  };
 
   return (
     <div
@@ -43,14 +38,8 @@ export default function TaskCard({ task }: TaskCardProps) {
         isDragging ? 'opacity-50' : ''
       }`}
     >
-      <div className="flex items-start justify-between mb-2">
-        <h3 className="font-medium text-gray-900 text-sm leading-tight">{task.title}</h3>
-        <span
-          className="px-2 py-1 rounded-full text-xs font-medium"
-          style={priorityColors[task.priority as keyof typeof priorityColors] || { backgroundColor: '#6b7280', color: 'white' }}
-        >
-          {task.priority}
-        </span>
+      <div className="mb-2">
+        <h3 className="font-bold text-gray-900 text-sm leading-tight">{task.title}</h3>
       </div>
       <p className="text-gray-600 text-sm mb-3 line-clamp-2">{task.description}</p>
 
