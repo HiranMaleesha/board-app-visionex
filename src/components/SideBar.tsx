@@ -27,9 +27,9 @@ export default function SideBar() {
   };
 
   return (
-    <div className="w-64 bg-white border-r border-gray-200 h-screen flex flex-col">
+    <div className="w-64 bg-white h-screen flex flex-col" style={{ borderRight: '1px solid #e5e5e5' }}>
       {/* Root Folder Dropdown */}
-      <div className="p-4 border-b border-gray-200">
+      <div className="p-4" style={{ borderBottom: '1px solid #e5e5e5' }}>
         <div className="flex items-center space-x-2 cursor-pointer">
           <div className="w-6 h-6 bg-gray-800 rounded flex items-center justify-center">
             <FolderOpen className="w-4 h-4 text-white" />
@@ -139,7 +139,7 @@ export default function SideBar() {
           >
             <MessageCircle className="w-4 h-4" />
             <span className="text-sm font-medium">Messages</span>
-            <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center ml-auto">
+            <div className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center ml-auto" style={{ borderRadius: '50%' }}>
               <span className="text-xs text-white font-bold">1</span>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function SideBar() {
       </nav>
 
       {/* Bottom Section */}
-      <div className="p-4 border-t border-gray-200 space-y-1">
+      <div className="p-4 space-y-1" style={{ borderTop: '1px solid #e5e5e5' }}>
         {/* Support */}
         <div
           className={`flex items-center space-x-3 px-3 py-2 rounded-md cursor-pointer transition-colors ${

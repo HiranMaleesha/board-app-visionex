@@ -23,27 +23,31 @@ export default function TaskCard({ task }: TaskCardProps) {
   };
 
   const priorityColors = {
-    high: 'bg-red-100 text-red-800',
-    medium: 'bg-yellow-100 text-yellow-800',
-    low: 'bg-green-100 text-green-800',
+    high: { backgroundColor: '#ef4444', color: 'white' },
+    medium: { backgroundColor: '#eab308', color: 'black' },
+    low: { backgroundColor: '#22c55e', color: 'white' },
   };
 
   return (
     <div
       ref={setNodeRef}
-      style={style}
+      style={{
+        ...style,
+        borderRadius: '8px',
+        border: '1px solid #e1e5e9',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+      }}
       {...attributes}
       {...listeners}
-      className={`bg-white p-3 sm:p-4 rounded-lg shadow-sm border border-gray-200 cursor-grab active:cursor-grabbing hover:shadow-md transition-shadow ${
+      className={`bg-white p-3 sm:p-4 cursor-grab active:cursor-grabbing transition-shadow ${
         isDragging ? 'opacity-50' : ''
       }`}
     >
       <div className="flex items-start justify-between mb-2">
         <h3 className="font-medium text-gray-900 text-sm leading-tight">{task.title}</h3>
         <span
-          className={`px-2 py-1 rounded-full text-xs font-medium ${
-            priorityColors[task.priority as keyof typeof priorityColors] || 'bg-gray-100 text-gray-800'
-          }`}
+          className="px-2 py-1 rounded-full text-xs font-medium"
+          style={priorityColors[task.priority as keyof typeof priorityColors] || { backgroundColor: '#6b7280', color: 'white' }}
         >
           {task.priority}
         </span>

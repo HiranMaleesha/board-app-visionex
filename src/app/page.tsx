@@ -13,7 +13,7 @@ export default function Home() {
   };
 
   return (
-    <div className='h-screen flex flex-col bg-gray-50'>
+    <div className='h-screen flex flex-col' style={{ backgroundColor: '#f8f9fa' }}>
       <Navbar onToggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
 
       <div className='flex flex-1 overflow-hidden'>

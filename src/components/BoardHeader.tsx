@@ -1,6 +1,6 @@
 export default function BoardHeader() {
   return (
-    <div className="bg-white border-b border-gray-200 px-4 sm:px-6 py-4">
+    <div className="bg-white px-4 sm:px-6 py-4" style={{ borderBottom: '1px solid #e5e5e5' }}>
       <div className="max-w-none">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between">
           <div className="flex-1">
@@ -17,13 +17,13 @@ export default function BoardHeader() {
               <span className="text-sm text-gray-600">assigned</span>
 
               <div className="flex -space-x-2">
-                <div className="w-6 sm:w-7 h-6 sm:h-7 bg-gray-800 rounded-full border-2 border-white flex items-center justify-center text-xs text-white font-medium">
+                <div className="w-6 sm:w-7 h-6 sm:h-7 bg-gray-800 rounded-full border-2 border-white flex items-center justify-center text-xs text-white font-medium" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
                   C
                 </div>
-                <div className="w-6 sm:w-7 h-6 sm:h-7 bg-gray-700 rounded-full border-2 border-white flex items-center justify-center text-xs text-white font-medium">
+                <div className="w-6 sm:w-7 h-6 sm:h-7 bg-gray-700 rounded-full border-2 border-white flex items-center justify-center text-xs text-white font-medium" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
                   C
                 </div>
-                <div className="w-6 sm:w-7 h-6 sm:h-7 bg-gray-600 rounded-full border-2 border-white flex items-center justify-center text-xs text-white font-medium">
+                <div className="w-6 sm:w-7 h-6 sm:h-7 bg-gray-600 rounded-full border-2 border-white flex items-center justify-center text-xs text-white font-medium" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
                   C
                 </div>
               </div>

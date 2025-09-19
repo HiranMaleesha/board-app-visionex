@@ -18,7 +18,7 @@ export default function Navbar({ onToggleSidebar, isSidebarOpen }: NavbarProps) 
   };
 
   return (
-    <header className='bg-white border-b border-gray-200 px-4 sm:px-6 py-3'>
+    <header className='bg-white border-b border-gray-300 px-4 sm:px-6 py-3' style={{ borderBottomColor: '#e5e5e5' }}>
       <div className='flex items-center justify-between'>
         <div className='flex items-center space-x-2'>
           {/* Mobile menu button */}
