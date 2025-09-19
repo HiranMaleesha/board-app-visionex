@@ -1,7 +1,7 @@
 export default function BoardHeader() {
   return (
-    <div className="bg-white border-b border-gray-200 px-6 py-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-white border-b border-gray-200 px-4 py-4">
+      <div className="max-w-none">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between">
           <div className="flex-1">
             <div className="flex items-center space-x-3">
