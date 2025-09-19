@@ -35,7 +35,9 @@ export default function BoardHeader() {
               </button>
             </div>
 
-            <p className="text-xs text-gray-400 mt-4">Last updated on: 04 April, 2022</p>
+            <div className="mt-4 pt-3" style={{ borderTop: '1px solid #e1e5e9' }}>
+              <p className="text-xs text-gray-400">Last updated on: 04 April, 2022</p>
+            </div>
           </div>
 
           <div className="mt-4 sm:mt-0 flex items-center space-x-3" />
